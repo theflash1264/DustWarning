@@ -1,0 +1,18 @@
+﻿@model DustWarning.ViewModel._Business.Business_CleanClockVMs.Business_CleanClockVM
+@inject IStringLocalizer<Program> Localizer;
+
+<wt:form vm="@Model">
+	<wt:quote>@Localizer["Sys.DeleteConfirm"]</wt:quote>
+<wt:row items-per-row="ItemsPerRowEnum.Two">
+<wt:display field="Entity.CleanTime" />
+<wt:display field="Entity.RecordName" />
+<wt:display field="Entity.OperateName" />
+<wt:display field="Entity.Situation" />
+<wt:display field="Entity.TenantCode" />
+</wt:row>
+    <wt:hidden field="Entity.ID" />
+    <wt:row align="AlignEnum.Right">
+        <wt:submitbutton theme=" ButtonThemeEnum.Warm" text="@Localizer["Sys.Delete"]"/>
+        <wt:closebutton />
+    </wt:row>
+</wt:form>

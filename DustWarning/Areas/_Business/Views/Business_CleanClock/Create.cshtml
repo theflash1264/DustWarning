@@ -1,0 +1,15 @@
+﻿@model DustWarning.ViewModel._Business.Business_CleanClockVMs.Business_CleanClockVM
+@inject IStringLocalizer<Program> Localizer;
+
+<wt:form vm="@Model">
+<wt:row items-per-row="ItemsPerRowEnum.Two">
+<wt:datetime field="Entity.CleanTime" />
+<wt:textbox field="Entity.RecordName" />
+<wt:textbox field="Entity.OperateName" />
+<wt:textbox field="Entity.Situation" />
+</wt:row>
+    <wt:row align="AlignEnum.Right">
+        <wt:submitbutton />
+        <wt:closebutton />
+    </wt:row>
+</wt:form>

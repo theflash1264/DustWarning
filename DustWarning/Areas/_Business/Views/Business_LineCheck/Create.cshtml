@@ -1,0 +1,15 @@
+﻿@model DustWarning.ViewModel._Business.Business_LineCheckVMs.Business_LineCheckVM
+@inject IStringLocalizer<Program> Localizer;
+
+<wt:form vm="@Model">
+<wt:row items-per-row="ItemsPerRowEnum.Two">
+<wt:combobox field="Entity.DeviceId" items="AllDevices"/>
+<wt:combobox field="Entity.FrameworkUserId" items="AllFrameworkUsers"/>
+<wt:datetime field="Entity.CheckTime" />
+<wt:textbox field="Entity.Situation" />
+</wt:row>
+    <wt:row align="AlignEnum.Right">
+        <wt:submitbutton />
+        <wt:closebutton />
+    </wt:row>
+</wt:form>

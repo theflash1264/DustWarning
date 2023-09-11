@@ -1,0 +1,15 @@
+﻿@model DustWarning.ViewModel._Sys.Sys_DataForwardVMs.Sys_DataForwardVM
+@inject IStringLocalizer<Program> Localizer;
+
+<wt:form vm="@Model">
+<wt:row items-per-row="ItemsPerRowEnum.Two">
+<wt:textbox field="Entity.Name" />
+<wt:combobox field="Entity.FTypeId" items="AllFTypes"/>
+<wt:textbox field="Entity.Ip" />
+<wt:textbox field="Entity.Port" />
+</wt:row>
+    <wt:row align="AlignEnum.Right">
+        <wt:submitbutton />
+        <wt:closebutton />
+    </wt:row>
+</wt:form>

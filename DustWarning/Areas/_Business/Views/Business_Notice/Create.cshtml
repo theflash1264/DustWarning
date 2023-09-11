@@ -1,0 +1,16 @@
+﻿@model DustWarning.ViewModel._Business.Business_NoticeVMs.Business_NoticeVM
+@inject IStringLocalizer<Program> Localizer;
+
+<wt:form vm="@Model">
+    <wt:row items-per-row="ItemsPerRowEnum.One">
+        <wt:textbox field="Entity.Title" />
+        @*<wt:textbox field="Entity.TenantCode" />*@
+    </wt:row>
+    <wt:row items-per-row="ItemsPerRowEnum.One">
+        <wt:ueditor field="Entity.Content" />
+    </wt:row>
+    <wt:row align="AlignEnum.Right">
+        <wt:submitbutton />
+        <wt:closebutton />
+    </wt:row>
+</wt:form>

@@ -1,0 +1,11 @@
+﻿@model DustWarning.ViewModel._Basics.Basis_AnalysisAgVMs.Basis_AnalysisAgListVM
+@inject IStringLocalizer<Program> Localizer;
+
+<wt:searchpanel vm="@Model" reset-btn="true">
+<wt:row items-per-row="ItemsPerRowEnum.Three">
+<wt:combobox field="Searcher.ADictionaryId" items="Searcher.AllADictionarys" empty-text="@Localizer["Sys.All"]" label-text="协议类型" />
+<wt:combobox field="Searcher.DeviceId" items="Searcher.AllDevices" empty-text="@Localizer["Sys.All"]" label-text="设备" />
+@*<wt:textbox field="Searcher.TenantCode" />*@
+</wt:row>
+</wt:searchpanel>
+<wt:grid vm="@Model" url="/_Basics/Basis_AnalysisAg/Search"/>

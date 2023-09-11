@@ -1,0 +1,19 @@
+﻿@model DustWarning.ViewModel._Business.Business_AlarmVMs.Business_AlarmVM
+@inject IStringLocalizer<Program> Localizer;
+
+<wt:form vm="@Model">
+<wt:row items-per-row="ItemsPerRowEnum.Two">
+<wt:combobox field="Entity.DeviceId" items="AllDevices"/>
+<wt:combobox field="Entity.AlarmId" items="AllAlarms"/>
+<wt:textbox field="Entity.AlarmInformation" />
+<wt:datetime field="Entity.StarTime" />
+<wt:datetime field="Entity.EndTime" />
+<wt:textbox field="Entity.Continued" />
+<wt:textbox field="Entity.State" />
+</wt:row>
+    <wt:hidden field="Entity.ID" />
+    <wt:row align="AlignEnum.Right">
+        <wt:submitbutton />
+        <wt:closebutton />
+    </wt:row>
+</wt:form>

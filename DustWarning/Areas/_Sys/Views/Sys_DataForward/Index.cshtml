@@ -1,0 +1,13 @@
+﻿@model DustWarning.ViewModel._Sys.Sys_DataForwardVMs.Sys_DataForwardListVM
+@inject IStringLocalizer<Program> Localizer;
+
+<wt:searchpanel vm="@Model" reset-btn="true">
+<wt:row items-per-row="ItemsPerRowEnum.Three">
+<wt:textbox field="Searcher.Name" />
+<wt:combobox field="Searcher.FTypeId" items="Searcher.AllFTypes" empty-text="@Localizer["Sys.All"]" label-text="转发类型" />
+<wt:textbox field="Searcher.Ip" />
+<wt:textbox field="Searcher.Port" />
+@*<wt:textbox field="Searcher.TenantCode" />*@
+</wt:row>
+</wt:searchpanel>
+<wt:grid vm="@Model" url="/_Sys/Sys_DataForward/Search"/>

@@ -1,0 +1,15 @@
+﻿@model DustWarning.ViewModel._Basics.Basis_DeviceVMs.Basis_DeviceVM
+@inject IStringLocalizer<Program> Localizer;
+
+<wt:form vm="@Model">
+<wt:row items-per-row="ItemsPerRowEnum.Two">
+<wt:display field="Entity.Name" />
+<wt:display field="Entity.Code" />
+<wt:display field="Entity.DT.Name" />
+<wt:display field="Entity.Area.Name" />
+<wt:display field="Entity.Place" />
+</wt:row>
+    <wt:row align="AlignEnum.Right">
+        <wt:closebutton />
+    </wt:row>
+</wt:form>

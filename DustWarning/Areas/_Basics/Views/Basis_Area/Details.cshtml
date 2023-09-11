@@ -1,0 +1,18 @@
+﻿@model DustWarning.ViewModel._Basics.Basis_AreaVMs.Basis_AreaVM
+@inject IStringLocalizer<Program> Localizer;
+
+<wt:form vm="@Model">
+<wt:row items-per-row="ItemsPerRowEnum.Two">
+<wt:display field="Entity.Name" />
+<wt:display field="Entity.AreaCode" />
+<wt:display field="Entity.Lng" />
+<wt:display field="Entity.Lat" />
+<wt:display field="Entity.Remarks" />
+<wt:display field="Entity.Area.Name" />
+<wt:display field="Entity.Province.Name" />
+<wt:display field="Entity.City.Name" />
+</wt:row>
+    <wt:row align="AlignEnum.Right">
+        <wt:closebutton />
+    </wt:row>
+</wt:form>

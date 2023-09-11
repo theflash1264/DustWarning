@@ -1,0 +1,11 @@
+﻿@model DustWarning.ViewModel._Business.Business_AlarmVMs.Business_AlarmListVM
+@inject IStringLocalizer<Program> Localizer;
+
+<wt:searchpanel vm="@Model" reset-btn="true">
+<wt:row items-per-row="ItemsPerRowEnum.Three">
+<wt:combobox field="Searcher.DeviceId" items="Searcher.AllDevices" empty-text="@Localizer["Sys.All"]" label-text="设备" />
+<wt:combobox field="Searcher.AlarmId" items="Searcher.AllAlarms" empty-text="@Localizer["Sys.All"]" label-text="报警类型" />
+<wt:textbox field="Searcher.State" />
+</wt:row>
+</wt:searchpanel>
+<wt:grid vm="@Model" url="/_Business/Business_Alarm/Search"/>

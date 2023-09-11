@@ -1,0 +1,11 @@
+﻿@model DustWarning.ViewModel._Business.Business_CleanClockVMs.Business_CleanClockListVM
+@inject IStringLocalizer<Program> Localizer;
+
+<wt:searchpanel vm="@Model" reset-btn="true">
+<wt:row items-per-row="ItemsPerRowEnum.Three">
+<wt:datetime field="Searcher.CleanTime" range="true" />
+<wt:textbox field="Searcher.RecordName" />
+<wt:textbox field="Searcher.OperateName" />
+</wt:row>
+</wt:searchpanel>
+<wt:grid vm="@Model" url="/_Business/Business_CleanClock/Search"/>

@@ -1,0 +1,27 @@
+﻿@model DustWarning.ViewModel._Business.Business_OutboundSettingVMs.Business_OutboundSettingVM
+@inject IStringLocalizer<Program> Localizer;
+
+<wt:form vm="@Model">
+<wt:row items-per-row="ItemsPerRowEnum.Two">
+<wt:switch field="Entity.IsCall" />
+<wt:textbox field="Entity.EcName" />
+<wt:textbox field="Entity.ApId" />
+<wt:textbox field="Entity.SecretKey" />
+<wt:textbox field="Entity.Sign" />
+<wt:textbox field="Entity.Username" />
+<wt:textbox field="Entity.ApiKey" />
+<wt:textbox field="Entity.EntId" />
+<wt:textbox field="Entity.RobotNum" />
+<wt:textbox field="Entity.OutCallers" />
+<wt:textbox field="Entity.CreateBy" />
+<wt:textbox field="Entity.CreateUser" />
+<wt:textbox field="Entity.SurplusAmount" />
+<wt:textbox field="Entity.UnitPrice" />
+<wt:textbox field="Entity.CallInterval" />
+</wt:row>
+    <wt:hidden field="Entity.ID" />
+    <wt:row align="AlignEnum.Right">
+        <wt:submitbutton />
+        <wt:closebutton />
+    </wt:row>
+</wt:form>

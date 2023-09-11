@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.33130.400
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DustWarning", "DustWarning\DustWarning.csproj", "{49FDCEA9-8AB8-4A1D-ACD8-2E33EBCCA8E5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DustWarning.Model", "DustWarning.Model\DustWarning.Model.csproj", "{81AEB824-6D5C-46FC-82DA-BB20FEF61DEE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DustWarning.DataAccess", "DustWarning.DataAccess\DustWarning.DataAccess.csproj", "{052BF5DB-1AA0-4699-A316-8A208DE91C94}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DustWarning.ViewModel", "DustWarning.ViewModel\DustWarning.ViewModel.csproj", "{A29CED43-200D-43EA-AAFE-A43D3F22C1B5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DustWarning.Test", "DustWarning.Test\DustWarning.Test.csproj", "{288BA9BA-AC9A-48E6-96B5-6DF4A3BBA73B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModbusTest", "ModbusTest\ModbusTest.csproj", "{5834D664-962A-4C4F-876F-0001DB1BD08C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{49FDCEA9-8AB8-4A1D-ACD8-2E33EBCCA8E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49FDCEA9-8AB8-4A1D-ACD8-2E33EBCCA8E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49FDCEA9-8AB8-4A1D-ACD8-2E33EBCCA8E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49FDCEA9-8AB8-4A1D-ACD8-2E33EBCCA8E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81AEB824-6D5C-46FC-82DA-BB20FEF61DEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81AEB824-6D5C-46FC-82DA-BB20FEF61DEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81AEB824-6D5C-46FC-82DA-BB20FEF61DEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81AEB824-6D5C-46FC-82DA-BB20FEF61DEE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{052BF5DB-1AA0-4699-A316-8A208DE91C94}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{052BF5DB-1AA0-4699-A316-8A208DE91C94}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{052BF5DB-1AA0-4699-A316-8A208DE91C94}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{052BF5DB-1AA0-4699-A316-8A208DE91C94}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A29CED43-200D-43EA-AAFE-A43D3F22C1B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A29CED43-200D-43EA-AAFE-A43D3F22C1B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A29CED43-200D-43EA-AAFE-A43D3F22C1B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A29CED43-200D-43EA-AAFE-A43D3F22C1B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{288BA9BA-AC9A-48E6-96B5-6DF4A3BBA73B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{288BA9BA-AC9A-48E6-96B5-6DF4A3BBA73B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{288BA9BA-AC9A-48E6-96B5-6DF4A3BBA73B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{288BA9BA-AC9A-48E6-96B5-6DF4A3BBA73B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5834D664-962A-4C4F-876F-0001DB1BD08C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5834D664-962A-4C4F-876F-0001DB1BD08C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5834D664-962A-4C4F-876F-0001DB1BD08C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5834D664-962A-4C4F-876F-0001DB1BD08C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1F219808-E6E8-4C1D-B846-41F2F7CF20FA}
+	EndGlobalSection
+EndGlobal

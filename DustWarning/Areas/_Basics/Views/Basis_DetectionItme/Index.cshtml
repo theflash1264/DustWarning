@@ -1,0 +1,11 @@
+﻿@model DustWarning.ViewModel._Basics.Basis_DetectionItmeVMs.Basis_DetectionItmeListVM
+@inject IStringLocalizer<Program> Localizer;
+
+<wt:searchpanel vm="@Model" reset-btn="true">
+<wt:row items-per-row="ItemsPerRowEnum.Three">
+<wt:textbox field="Searcher.Name" />
+<wt:textbox field="Searcher.Code" />
+@*<wt:textbox field="Searcher.TenantCode" />*@
+</wt:row>
+</wt:searchpanel>
+<wt:grid vm="@Model" url="/_Basics/Basis_DetectionItme/Search"/>

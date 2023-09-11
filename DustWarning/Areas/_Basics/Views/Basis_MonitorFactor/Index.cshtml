@@ -1,0 +1,9 @@
+﻿@model DustWarning.ViewModel._Basics.Basis_MonitorFactorVMs.Basis_MonitorFactorListVM
+@inject IStringLocalizer<Program> Localizer;
+
+<wt:searchpanel vm="@Model" reset-btn="true">
+<wt:row items-per-row="ItemsPerRowEnum.Three">
+<wt:combobox field="Searcher.DeviceId" items="Searcher.AllDevices" empty-text="@Localizer["Sys.All"]" label-text="设备" />
+</wt:row>
+</wt:searchpanel>
+<wt:grid vm="@Model" url="/_Basics/Basis_MonitorFactor/Search"/>

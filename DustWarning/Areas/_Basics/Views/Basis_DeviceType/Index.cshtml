@@ -1,0 +1,12 @@
+﻿@model DustWarning.ViewModel._Basics.Basis_DeviceTypeVMs.Basis_DeviceTypeListVM
+@inject IStringLocalizer<Program> Localizer;
+
+<wt:searchpanel vm="@Model" reset-btn="true">
+<wt:row items-per-row="ItemsPerRowEnum.Three">
+<wt:textbox field="Searcher.Name" />
+<wt:combobox field="Searcher.MessageTypeId" items="Searcher.AllMessageTypes" empty-text="@Localizer["Sys.All"]" label-text="通讯类型" />
+<wt:combobox field="Searcher.AgreementTypeId" items="Searcher.AllAgreementTypes" empty-text="@Localizer["Sys.All"]" label-text="协议类型" />
+@*<wt:textbox field="Searcher.TenantCode" />*@
+</wt:row>
+</wt:searchpanel>
+<wt:grid vm="@Model" url="/_Basics/Basis_DeviceType/Search"/>

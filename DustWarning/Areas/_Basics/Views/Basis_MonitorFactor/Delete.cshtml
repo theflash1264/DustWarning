@@ -1,0 +1,24 @@
+﻿@model DustWarning.ViewModel._Basics.Basis_MonitorFactorVMs.Basis_MonitorFactorVM
+@inject IStringLocalizer<Program> Localizer;
+
+<wt:form vm="@Model">
+	<wt:quote>@Localizer["Sys.DeleteConfirm"]</wt:quote>
+<wt:row items-per-row="ItemsPerRowEnum.Two">
+<wt:display field="Entity.Device.Name" />
+<wt:display field="Entity.MonitorFactor.Name" />
+<wt:display field="Entity.MaxNum" />
+<wt:display field="Entity.MinNum" />
+<wt:display field="Entity.IsZeroAlarm" />
+<wt:display field="Entity.ZeroAlarmDuration" />
+<wt:display field="Entity.IsConstantAlarm" />
+<wt:display field="Entity.ConstantAlarmDuration" />
+<wt:display field="Entity.Sort" />
+<wt:display field="Entity.IsShow" />
+<wt:display field="Entity.TenantCode" />
+</wt:row>
+    <wt:hidden field="Entity.ID" />
+    <wt:row align="AlignEnum.Right">
+        <wt:submitbutton theme=" ButtonThemeEnum.Warm" text="@Localizer["Sys.Delete"]"/>
+        <wt:closebutton />
+    </wt:row>
+</wt:form>

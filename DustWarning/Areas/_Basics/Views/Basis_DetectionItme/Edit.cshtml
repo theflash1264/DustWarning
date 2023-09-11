@@ -1,0 +1,15 @@
+﻿@model DustWarning.ViewModel._Basics.Basis_DetectionItmeVMs.Basis_DetectionItmeVM
+@inject IStringLocalizer<Program> Localizer;
+
+<wt:form vm="@Model">
+<wt:row items-per-row="ItemsPerRowEnum.Two">
+<wt:textbox field="Entity.Name" />
+<wt:textbox field="Entity.Code" />
+<wt:combobox field="Entity.UDictionaryId" items="AllUDictionarys"/>
+</wt:row>
+    <wt:hidden field="Entity.ID" />
+    <wt:row align="AlignEnum.Right">
+        <wt:submitbutton />
+        <wt:closebutton />
+    </wt:row>
+</wt:form>

@@ -1,0 +1,22 @@
+﻿@model DustWarning.ViewModel._Basics.Basis_MonitorFactorVMs.Basis_MonitorFactorVM
+@inject IStringLocalizer<Program> Localizer;
+
+<wt:form vm="@Model">
+<wt:row items-per-row="ItemsPerRowEnum.Two">
+<wt:combobox field="Entity.DeviceId" items="AllDevices"/>
+<wt:combobox field="Entity.MonitorFactorId" items="AllMonitorFactors"/>
+<wt:textbox field="Entity.MaxNum" />
+<wt:textbox field="Entity.MinNum" />
+<wt:textbox field="Entity.IsZeroAlarm" />
+<wt:textbox field="Entity.ZeroAlarmDuration" />
+<wt:textbox field="Entity.IsConstantAlarm" />
+<wt:textbox field="Entity.ConstantAlarmDuration" />
+<wt:textbox field="Entity.Sort" />
+<wt:textbox field="Entity.IsShow" />
+</wt:row>
+    <wt:hidden field="Entity.ID" />
+    <wt:row align="AlignEnum.Right">
+        <wt:submitbutton />
+        <wt:closebutton />
+    </wt:row>
+</wt:form>
